@@ -14,17 +14,9 @@
 <meta property="og:url" content="http://yoursite.com/2018/07/31/佐藤玫瑰花蕾/index.html">
 <meta property="og:site_name" content="解忧折纸铺">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://img02.sogoucdn.com/app/a/100520146/373ff19822fb6b734ae27e5fd87e0f12">
-<meta property="og:image" content="http://img02.sogoucdn.com/app/a/100520146/1506a89aab5751b623da8c1c069fabdc">
-<meta property="og:image" content="http://img01.sogoucdn.com/app/a/100520146/d782791677bdc500258b128048b2029d">
-<meta property="og:image" content="http://img03.sogoucdn.com/app/a/100520146/9ba794b46370057cef60062f261ccf46">
-<meta property="og:image" content="http://img04.sogoucdn.com/app/a/100520146/5ef83bee0cfdcdb8b305abd49d864baa">
-<meta property="og:image" content="http://img03.sogoucdn.com/app/a/100520146/8e330a163bd87d72caebfaf900acc3a3">
-<meta property="og:image" content="http://img01.sogoucdn.com/app/a/100520146/0fce260430932f8837a0e43db3b218a7">
-<meta property="og:updated_time" content="2018-07-31T10:32:30.690Z">
+<meta property="og:updated_time" content="2018-07-31T13:03:23.978Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="佐藤玫瑰花蕾">
-<meta name="twitter:image" content="http://img02.sogoucdn.com/app/a/100520146/373ff19822fb6b734ae27e5fd87e0f12">
   
     <link rel="alternative" href="/atom.xml" title="解忧折纸铺" type="application/atom+xml">
   
@@ -170,9 +162,46 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><img src="http://img02.sogoucdn.com/app/a/100520146/373ff19822fb6b734ae27e5fd87e0f12" alt=""><br><a id="more"></a><br><img src="http://img02.sogoucdn.com/app/a/100520146/1506a89aab5751b623da8c1c069fabdc" alt=""><br><img src="http://img01.sogoucdn.com/app/a/100520146/d782791677bdc500258b128048b2029d" alt=""><br><img src="http://img03.sogoucdn.com/app/a/100520146/9ba794b46370057cef60062f261ccf46" alt=""><br><img src="http://img04.sogoucdn.com/app/a/100520146/5ef83bee0cfdcdb8b305abd49d864baa" alt=""><br><img src="http://img03.sogoucdn.com/app/a/100520146/8e330a163bd87d72caebfaf900acc3a3" alt=""><br><img src="http://img01.sogoucdn.com/app/a/100520146/0fce260430932f8837a0e43db3b218a7" alt=""></p>
-<p>  <a href="https://mp.weixin.qq.com/s/hl3dFlNKNQWIRI85fIuJsQ" target="_blank" rel="noopener">阅读原文</a></p>
-
+        <script src=/js/crypto-js.js></script>
+<script>
+function doDecrypt (pwd, onError) {
+	console.log('in doDecrypt');
+	const txt = document.getElementById('enc_content').innerHTML;
+	let plantext;
+	try {
+		const bytes = CryptoJS.AES.decrypt(txt, pwd);
+		var plaintext = bytes.toString(CryptoJS.enc.Utf8);
+	} catch(err) {
+		if(onError) {
+			onError(err);
+		}
+		return;
+	}
+	document.getElementById('enc_content').innerHTML = plaintext;
+	document.getElementById('enc_content').style.display = 'block';
+	document.getElementById('enc_passwd').style.display = 'none';
+	if(typeof MathJax !== 'undefined') {
+		MathJax.Hub.Queue(
+			['resetEquationNumbers', MathJax.InputJax.TeX],
+			['PreProcess', MathJax.Hub],
+			['Reprocess', MathJax.Hub]
+		);
+	}
+}
+</script>
+<div id="enc_content" style="display:none">U2FsdGVkX1+gFwlXOQhDGtPUoaWvpY6Wi0xcohiIW0mUBIQPVlOntbImhfaISH0dD8VE34qKbSIKZbQ0qblziZQHbDpZJTq1n10pZEKMPPWnfA1bGxUIQp2PBLKSKGaYarNLexGa9UJkcMQWTQZ75UP/hTnMLDCvctl8KK1uUxvWm9vEVhI8oxTwDlJuL3d28z5Tfh6v6xS3seq2Q0tb5xjGC+7UgSVEo2L1lO2ssn5A9747Ob2E2JdgrbGCiyfO6Pwgm1NaZF9bE5yBd4Wi83BqDxVZ68Q2LmyGLjVPJzQD4PmdExnrMMPK7LQ9g8PgIFV8/iUomItrHjJGtffneU5VxjSpuAJMZQDyl+7pSR3/SooepODmGX5bMIOC49FzknJE+Ekl3gC9roX2KFvUm9ceo5YC3dazdLkFUe15VTyvx7uhXNP9Y0n6BiaydfTdiIddfPPxC+24bmgdWheujMQHeQfbLKFpLpPqDq5kx20KpCwpYvTBC0rJvlL09mDWJBJtlzyK8G6GUHtwzkwy/46xfYGyaa7mL4TdrwwWB+p01R7cADl7EC7feliXUfGxdlrmoiqDbUwFs+M/JNjok1GhuFLb6eG95m+vigXbNSpb/deJs3sCf5U4ccn+UVBwHNEUMpRgBYzeb2boG81TC3cQ7nd1HFE1oEEA2AAPoSoU4GwKvOSOn2UfJNAVr4yXF7XZGpUGNsByA2XfsozwROK/8WJiFUM5AR45Rc31kaz9L64Dik6DzAL+Sg3XRcEST+8KrcpTRcajBajwzvIGOChzrghetokqZVWZhF01YG6quhWBZi8J/LbMNskvbim3vSqbqTPZ1vIUORV4iJHy/v8oXto53FV8KBeipB8gdCvI32NZ/q5Fr+MlZXjlJ0A5mRO8I/SVA52jsbT59cGg2oSEPDXEFUjD2ZDyeb1QTgEFD70M6qIQz3coszAXWM9xMk/24pMv0wBZsgcj3U2eVz/+WtaWUy1/dl9eOZphOAySKhVN2YOhNAahJ4g2SQYlDhjRKmgxM66QGfaDcFSavUu1s0enmRii20vGqTibZbmOSudHss/MgFrfZqDxubAU77rmPXKbKBtsQam/4WJ2vfHcb9+tWpp40kqBuTFC758=</div>
+<div id="enc_passwd"> <input id="enc_pwd_input" type="password" style="border-radius: 5px;border-style: groove;height: 30px;width: 50%;cursor: auto;font-size: 102%;color: currentColor;outline: none;text-overflow: initial;padding-left: 5px;" onkeydown="if (event.keyCode == 13) { decrypt(); return false;}"> <input type="submit" value="解&nbsp;密" onclick="decrypt()" style="width: 58px;height: 34px;border-radius: 5px;background-color: white;border-style: solid;color: currentColor;"><div id="enc_error" style="display: inline-block;color: #d84527;margin-left: 10px"></div>
+<script>
+var onError = function(error) {
+	document.getElementById("enc_error").innerHTML = "password error!"
+};
+function decrypt() {
+var passwd = document.getElementById("enc_pwd_input").value;
+console.log(passwd);
+doDecrypt(passwd, onError);
+}
+</script>
+</div>
       
 
       
@@ -206,6 +235,57 @@
 
       
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/07/31/佐藤玫瑰花蕾/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
@@ -356,11 +436,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">教程</a>
+                <a href="javascript:void(0)" class="js-tag color3">随笔</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">随笔</a>
+                <a href="javascript:void(0)" class="js-tag color3">教程</a>
               </li>
             
             <div class="clearfix"></div>
