@@ -198,7 +198,7 @@ function doDecrypt (pwd, onError) {
 	}
 }
 </script>
-<div id="enc_content" style="display:none">U2FsdGVkX1+qcEkas3zI9eOy28NDWPbVGKfFpkNgJcpaV2S2nJVY1pnWW3+kRWa2ZRpHREdtzKGd1BapiqkXwY0keet6Jr2XCbcXdZ9VcSGe+kKwXU/d3/+21PFi8tM9U46VvapGxktDwuGnVGOGGb6PJXouzIpCM9FB/6448YAL1AcgzDuey1DntD46MllbYRh++L43XgEM9+lhnqyBOyfvaMKtPKSq6fbp1UQDsi+dEnt3a45rnqzdWl3J1ybSuHb3Nt+m7onjUwB2aC5Cl09/f5kh+bbyVdF7cVSQ1hoLcBLW6J+4EHjk/J1H52x6zVAMscS0roa9ryhR60RXE9dKjBZuE+9493BmZfudmdy01k0vyzTshoenPS7I9COpoh61dKNVsJD0H3IhRr+V/Uq+etqwkynyVkqyFlnNAKk+T4yG9vqMKhjm9UvCg7bLTEF1T3SXlqVavHwQV40+Bi45LbUKV8GH/d4tSdbFQ4I6wbONNSysXNY4GWl0VFRZ6VKGr1xLDMLBAiNVP13nwSUt7at3etho77MQGUybepGQVtUa1wMb/rQZ0VocUK59WQfoe0JtLal96xb9PBjOwo4+bNnb3f9sn8y0uQsz135WCuN0V+SbdiVzZFXQFnQhRxhePIzN6VXFbDOWjBX2Qo7UP9qK/JHYSAxkLZtYZviN0Dj9tvSlZUhJaoQWpbzAV9MboMJu3mhv/FLZYpqwdttQvFtlzrhbUQxYCdJ69xcu3LArkNdcijLWysGiftZs8O4FBuRZ/hBBqOpfZIJp9HtJ1nMNtcYIvv5nvgzSTmepeeytCBQCS4I2BiHEOOWdKhbC97R5wGHzw4hf4QDKQMJppib3opbcdo4hClRNKMs=</div>
+<div id="enc_content" style="display:none">U2FsdGVkX1+X7xfiMs+PoC/s5gsnaYsnDfVR9mpo9n7PkQCVBuG8zErxzQ60hr3PTHehd358id1V/GoIQrvcjRu+JiJVa/TdTeKhuhHiaPlpRGP6exi7+Dh2X3vvDxkztaD6ntM1uHJYNQk/3ckH+0tNDy7hG0OQUSIOnPdnFAS/aimVubqdTrKwY+q5vFTiYA99G0XG4DRSr1dAiLqC4kmrZ+K9XAQ8xZAnR5McIc7rvC/BSsXixxyAVO8cq+le07bGMykCwsPI4rutfGG1/g1J6CGL3nofqk+MCSC++ZlJGXRXWl74kRBV65FMaDY0fzyODnp14XPfN6+a2Pxxdn+GEP2TNZzguyMyah23oFdtV6x2WiDJ2kk6D8E8yyRAmGFw26yK5zQn06FHNlsQtzDklWJzg7pK24DKASy98drzocONKmWcp+/zITfC7+9sEPc4z4fQ1jumpR+9HR7efm+NVB8Y8E+orlR+QccG4KBuG/Bw5/CycoQiyZN8eguHQzqbBtSeJl7rBAY+wAmW1X9YmLb0PW7FZcwotFC3gHGDD5NRPNSVZDiJIcaJQ5zEAkETOxN/N7xzu1tifmVB2Sp3poXmnWidSaHjV7oxh1widp0SvMZmhHh+ntBcKTEEICDFn8eM9TWw96u7vIpYYgb1v71E88U4a9wCQA8cnGUB1t8ewA3DVAPq4DefQGykcqQ7N/QdRZ6WCXJbNYk4XcUFeUY8fMUzJ5Xm91uF/iiZfytBSPRPjWRA/yEKBIuqhcufHLxEdVtvzN9wknQPWLeuC6IWcYBSVoL5awEIsuxCJqKFez2bMbgO0rd+s5H2n3WLw3PpV3VU99P6rfrAXyFehJjXXdhWO0v10FZFZvg=</div>
 <div id="enc_passwd"> <input id="enc_pwd_input" type="password" style="border-radius: 5px;border-style: groove;height: 35px;width: 30%;cursor: auto;font-size: 102%;color: currentColor;outline: none;text-overflow: initial;padding-left: 5px;" onkeydown="if (event.keyCode == 13) { decrypt(); return false;}"> <input type="submit" value="请输入密码" onclick="decrypt()" style="width: 110px;height: 35px;border-radius: 5px;background-color: white;border-style: solid;color: currentColor;"><div id="enc_error" style="display: inline-block;color: #d84527;margin-left: 10px"></div>
 <script>
 var onError = function(error) {
@@ -245,57 +245,6 @@ doDecrypt(passwd, onError);
 
       
 
-      
-        
-<div class="share-btn share-icons tooltip-left">
-  <div class="tooltip tooltip-east">
-    <span class="tooltip-item">
-      <a href="javascript:;" class="share-sns share-outer">
-        <i class="icon icon-share"></i>
-      </a>
-    </span>
-    <span class="tooltip-content">
-      <div class="share-wrap">
-        <div class="share-icons">
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="icon icon-weibo"></i>
-          </a>
-          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
-            <i class="icon icon-weixin"></i>
-          </a>
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="icon icon-qq"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="icon icon-douban"></i>
-          </a>
-          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a>
-          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
-            <i class="icon icon-facebook"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="icon icon-twitter"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="icon icon-google"></i>
-          </a>
-        </div>
-      </div>
-    </span>
-  </div>
-</div>
-
-<div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/08/24/船型收纳/" alt="微信分享二维码">
-    </div>
-</div>
-
-<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
